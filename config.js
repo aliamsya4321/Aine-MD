@@ -2,9 +2,9 @@ let fs = require('fs')
 let chalk = require('chalk')
 
 owner = [
-  ['62895330379186'],
-  ['62895330379186'],
-  ['62895330379186', 'Owner', true]
+  ['6285362461878'],
+  ['6285362461878'],
+  ['6285362461878', 'Owner', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 mods = [] // Want some help?
@@ -12,7 +12,7 @@ prems = [] // Premium user has unlimited limit
 APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',
-  xteam: 'https://api.xteam.xyz',
+  xteam: 'http://api.xteam.xyz',
   zahir: 'https://zahirr-web.herokuapp.com',
   bcil: 'https://75.119.137.248:21587',
   neoxr: 'https://api.neoxr.eu.org/',
@@ -40,8 +40,8 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '@ainee_bot'
-  var sticker_author = 'Aine'
+  var sticker_name = '@ASEP_BOT'
+  var sticker_author = 'ASEP'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
@@ -56,9 +56,9 @@ fs.watchFile(file_exif, () => {
 })
 
 // Sticker WM
-packname = sticker_name
+packname = sticker_ASEP
 author = sticker_author
-wm = '© Aine'
+wm = '© ASEP'
 
 Intervalmsg = 1800 //detik
 
